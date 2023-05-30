@@ -1,7 +1,7 @@
 {
 	"name": "@igor.dvlpr/normalized-string",
 	"version": "1.0.0",
-	"description": "$2",
+	"description": "💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮",
 	"sideEffects": false,
 	"engines": {
 		"node": ">=16.0"

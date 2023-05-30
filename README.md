@@ -1,4 +1,4 @@
-# $1
+# normalized-string
 $2
 
 <br>
@@ -17,7 +17,7 @@ $2
 Install it by executing:
 
 ```shell
-npm i "@igor.dvlpr/$1"
+npm i "@igor.dvlpr/normalized-string"
 ```
 
 <br>

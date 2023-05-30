@@ -23,8 +23,14 @@
 		"url": "git+https://github.com/igorskyflyer/npm-normalized-string.git"
 	},
 	"keywords": [
-		$4
-		"igorskyflyer",
+		"string",
+		"normalize",
+		"normalized-string",
+		"line",
+		"line-ending",
+		"crlf",
+		"lf",
+		"line-feed""igorskyflyer",
 		"igor.dvlpr",
 	],
 	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",

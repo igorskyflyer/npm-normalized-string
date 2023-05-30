@@ -1,5 +1,5 @@
 {
-	"name": "@igor.dvlpr/$1",
+	"name": "@igor.dvlpr/normalized-string",
 	"version": "1.0.0",
 	"description": "$2",
 	"sideEffects": false,

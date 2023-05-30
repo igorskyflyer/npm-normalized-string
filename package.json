@@ -30,8 +30,9 @@
 		"line-ending",
 		"crlf",
 		"lf",
-		"line-feed""igorskyflyer",
-		"igor.dvlpr",
+		"line-feed",
+		"igorskyflyer",
+		"igor.dvlpr"
 	],
 	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
 	"license": "MIT",

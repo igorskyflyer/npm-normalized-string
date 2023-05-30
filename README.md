@@ -1,5 +1,5 @@
 # normalized-string
-$2
+💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮
 
 <br>
 

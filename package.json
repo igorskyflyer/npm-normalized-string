@@ -20,7 +20,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/igorskyflyer/$3.git"
+		"url": "git+https://github.com/igorskyflyer/npm-normalized-string.git"
 	},
 	"keywords": [
 		$4
@@ -31,9 +31,9 @@
 	"license": "MIT",
 	"funding": "https://ko-fi.com/igorskyflyer",
 	"bugs": {
-		"url": "https://github.com/igorskyflyer/$3/issues"
+		"url": "https://github.com/igorskyflyer/npm-normalized-string/issues"
 	},
-	"homepage": "https://github.com/igorskyflyer/$3#readme",
+	"homepage": "https://github.com/igorskyflyer/npm-normalized-string#readme",
 	"devDependencies": {
 		"@types/node": "^16.0.0",
 		"typescript": "^5.0.4",

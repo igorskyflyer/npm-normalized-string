@@ -1,16 +1,16 @@
 // Copyright: Igor Dimitrijević (@igorskyflyer)
 
 import { ExtendableString } from '@igor.dvlpr/extendable-string'
-import { LineEnding, LineEndings } from './LineEndings.mjs'
+import { LineEnding } from './LineEnding.mjs'
 
 class NormalizedString extends ExtendableString {
-  constructor(value: string, endings: LineEndings) {
+  constructor(value: string, endings: LineEnding = 'lf') {
     super(value, (str) => {
-      if (LineEnding[endings] === LineEnding.crlf) {
-        return str.replace(/\r\n/g, '\n')
+      if (endings === 'crlf') {
+        return str.replace(/\r?\n/g, '\r\n')
       }
 
-      return str.replace(/\r?\n/g, '\n')
+      return str.replace(/\r\n/g, '\n')
     })
   }
 }

@@ -47,4 +47,24 @@ describe('🧪 normalized-string tests 🧪', () => {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n\r\nDuis in nulla ut leo lobortis venenatis.'
     )
   }) // #5
+
+  test('#6 should return CRLFs', () => {
+    const loremIpsum = new NormalizedString(
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.',
+      LineEnding.crlf
+    )
+    loremIpsum.value = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nPellentesque'
+
+    assert.equal(loremIpsum.value, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque')
+  }) // #6
+
+  test('#7 should return LFs', () => {
+    const loremIpsum = new NormalizedString(
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n\r\nDuis in nulla ut leo lobortis venenatis.',
+      LineEnding.lf
+    )
+    loremIpsum.value = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque'
+
+    assert.equal(loremIpsum.value, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nPellentesque')
+  }) // #7
 })

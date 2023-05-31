@@ -3,7 +3,7 @@
 import { ExtendableString } from '@igor.dvlpr/extendable-string'
 import { LineEnding, LineEndings } from './LineEnding.mjs'
 
-class NormalizedString extends ExtendableString {
+export class NormalizedString extends ExtendableString {
   constructor(value: string, endings: LineEndings = LineEnding.lf) {
     super(value, (str) => {
       if (endings === LineEnding.crlf) {

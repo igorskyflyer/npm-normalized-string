@@ -1,3 +1,5 @@
+/* cSpell:disable */
+
 import { describe, test, assert } from 'vitest'
 import { NormalizedString } from '../src/index.mjs'
 import { LineEnding } from '../src/LineEndings.mjs'

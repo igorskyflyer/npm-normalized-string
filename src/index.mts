@@ -1,7 +1,7 @@
 // Copyright: Igor Dimitrijević (@igorskyflyer)
 
 import { ExtendableString } from '@igor.dvlpr/extendable-string'
-import { LineEnding, LineEndings } from './LineEnding.mjs'
+import { LineEnding, LineEndings } from './LineEndings.mjs'
 
 export class NormalizedString extends ExtendableString {
   constructor(value: string, endings: LineEndings = LineEnding.lf) {

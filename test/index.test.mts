@@ -11,7 +11,7 @@ describe('🧪 normalized-string tests 🧪', () => {
   }) // #1
 
   test('#2 should return LFs', () => {
-    const loremIpsum =
+    const loremIpsum: string =
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.'
 
     assert.equal(
@@ -21,7 +21,7 @@ describe('🧪 normalized-string tests 🧪', () => {
   }) // #2
 
   test('#3 should return CRLFs', () => {
-    const loremIpsum =
+    const loremIpsum: string =
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.'
 
     assert.equal(
@@ -31,7 +31,7 @@ describe('🧪 normalized-string tests 🧪', () => {
   }) // #3
 
   test('#4 should return LFs', () => {
-    const loremIpsum =
+    const loremIpsum: string =
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n\r\nDuis in nulla ut leo lobortis venenatis.'
 
     assert.equal(
@@ -41,7 +41,7 @@ describe('🧪 normalized-string tests 🧪', () => {
   }) // #4
 
   test('#5 should return CRLFs', () => {
-    const loremIpsum =
+    const loremIpsum: string =
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.'
 
     assert.equal(
@@ -51,7 +51,7 @@ describe('🧪 normalized-string tests 🧪', () => {
   }) // #5
 
   test('#6 should return CRLFs', () => {
-    const loremIpsum = new NormalizedString(
+    const loremIpsum: NormalizedString = new NormalizedString(
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.',
       LineEnding.crlf
     )
@@ -61,7 +61,7 @@ describe('🧪 normalized-string tests 🧪', () => {
   }) // #6
 
   test('#7 should return LFs', () => {
-    const loremIpsum = new NormalizedString(
+    const loremIpsum: NormalizedString = new NormalizedString(
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n\r\nDuis in nulla ut leo lobortis venenatis.',
       LineEnding.lf
     )

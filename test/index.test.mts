@@ -1,8 +1,7 @@
 /* cSpell:disable */
 
 import { describe, test, assert } from 'vitest'
-import { NormalizedString } from '../src/index.mjs'
-import { LineEnding } from '../src/LineEndings.mjs'
+import { NormalizedString, LineEnding } from '../src/index.mjs'
 
 describe('🧪 normalized-string tests 🧪', () => {
   test('#1 should return ""', () => {

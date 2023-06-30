@@ -12,9 +12,9 @@ export class NormalizedString extends ExtendableString {
    * @param value A string to work with.
    * @param endings The line endings to use:
    *
-   * `LineEnding.lf` - UNIX-like line endings (line feed),
+   * - `LineEnding.lf` - UNIX-like line endings (line feed),
    *
-   * `LineEnding.crlf` - Windows line endings (carriage return + line feed).
+   * - `LineEnding.crlf` - Windows line endings (carriage return + line feed).
    */
   constructor(value: string, endings: LineEndings = LineEnding.lf) {
     super(value, (str: string) => {

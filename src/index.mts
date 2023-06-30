@@ -5,7 +5,7 @@ import { LineEnding, LineEndings } from './LineEndings.mjs'
 
 export class NormalizedString extends ExtendableString {
   constructor(value: string, endings: LineEndings = LineEnding.lf) {
-    super(value, (str) => {
+    super(value, (str: string) => {
       if (endings === LineEnding.crlf) {
         return str.replace(/\r?\n/g, '\r\n')
       }

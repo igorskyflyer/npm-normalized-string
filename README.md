@@ -49,7 +49,7 @@ const loremIpsum: string =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.'
 
 const lfEndings: NormalizedString = new NormalizedString(loremIpsum) // LF are the default endings
-const crlfEndings = new NormalizedString(loremIpsum, LineEnding.crlf)
+const crlfEndings: NormalizedString = new NormalizedString(loremIpsum, LineEnding.crlf)
 
 console.log(lfEndings.value) // returns 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.'
 console.log(crlfEndings.value) // returns 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n\r\nDuis in nulla ut leo lobortis venenatis.'

@@ -1,4 +1,5 @@
 # normalized-string
+
 💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮
 
 <br>
@@ -23,3 +24,15 @@ npm i "@igor.dvlpr/normalized-string"
 <br>
 
 ## 🤹🏼‍♂️ API
+
+```ts
+constructor(value: string, endings: LineEndings = LineEnding.lf)
+```
+
+`value` - A string to work with.
+
+`endings` - The line endings to use:
+
+- `LineEnding.lf` - UNIX-like line endings (line feed),
+
+- `LineEnding.crlf` - Windows line endings (carriage return + line feed).

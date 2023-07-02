@@ -40,6 +40,26 @@ constructor(value: string, endings: LineEndings = LineEnding.lf)
 <br>
 <br>
 
+You can also set the property `value` directly and the line endings will be correct.
+
+<br>
+
+```ts
+import { NormalizedString, LineEnding } from '@igor.dvlpr/normalized-string'
+
+const loremIpsum: string =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.'
+
+const lfEndings: NormalizedString = new NormalizedString(loremIpsum)
+
+lfEndings.value = 'Hello\r\nworld!'
+
+console.log(JSON.stringify(lfEndings.value)) // returns 'Hello\nworld'
+```
+
+<br>
+<br>
+
 ## 🤔 Examples
 
 ```ts
@@ -51,6 +71,6 @@ const loremIpsum: string =
 const lfEndings: NormalizedString = new NormalizedString(loremIpsum) // LF are the default endings
 const crlfEndings: NormalizedString = new NormalizedString(loremIpsum, LineEnding.crlf)
 
-console.log(lfEndings.value) // returns 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.'
-console.log(crlfEndings.value) // returns 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n\r\nDuis in nulla ut leo lobortis venenatis.'
+console.log(JSON.stringify(lfEndings.value)) // returns 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nDuis in nulla ut leo lobortis venenatis.'
+console.log(JSON.stringify(crlfEndings.value)) // returns 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n\r\nDuis in nulla ut leo lobortis venenatis.'
 ```

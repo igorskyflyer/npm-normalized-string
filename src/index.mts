@@ -1,6 +1,6 @@
 // Copyright: Igor Dimitrijević (@igorskyflyer)
 
-import { ExtendableString } from '@igor.dvlpr/extendable-string'
+import { ExtendableString } from '@igorskyflyer/extendable-string'
 import { LineEnding, LineEndings } from './LineEndings.mjs'
 
 /**

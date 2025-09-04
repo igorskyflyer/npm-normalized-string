@@ -1,52 +1,65 @@
 {
-	"name": "@igor.dvlpr/normalized-string",
-	"version": "1.0.2",
-	"description": "💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮",
-	"sideEffects": false,
-	"engines": {
-		"node": ">=16.0"
-	},
-	"types": "./dist/index.d.mts",
-	"main": "./dist/index.mjs",
-	"module": "./dist/index.mjs",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsc",
-		"test": "vitest --run",
-		"debug": "vitest",
-		"pub": "npm test && npm run build && npm publish --access public"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/igorskyflyer/npm-normalized-string.git"
-	},
-	"keywords": [
-		"string",
-		"normalize",
-		"normalized-string",
-		"line",
-		"line-ending",
-		"crlf",
-		"lf",
-		"line-feed",
-		"igorskyflyer",
-		"igor.dvlpr"
-	],
-	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
-	"license": "MIT",
-	"funding": "https://ko-fi.com/igorskyflyer",
-	"bugs": {
-		"url": "https://github.com/igorskyflyer/npm-normalized-string/issues"
-	},
-	"homepage": "https://github.com/igorskyflyer/npm-normalized-string#readme",
-	"devDependencies": {
-		"@types/node": "^16.0.0",
-		"typescript": "^5.0.4",
-		"vitest": "^0.31.1"
-	},
-	"dependencies": {
-		"@igor.dvlpr/extendable-string": "^1.0.0"
-	}
+    "name": "@igorskyflyer/normalized-string",
+    "version": "1.1.0",
+    "description": "💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮",
+    "sideEffects": false,
+    "engines": {
+        "node": ">=22.0"
+    },
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest --run",
+        "pub": "pnpm test && git push origin main --tags"
+    },
+    "keywords": [
+        "string",
+        "string-utils",
+        "string-normalization",
+        "line-endings",
+        "newline",
+        "lf",
+        "crlf",
+        "cross-platform",
+        "text-processing",
+        "string-formatting",
+        "typescript",
+        "typescript-library",
+        "extendable",
+        "string-wrapper",
+        "text-normalization",
+        "igor dimitrijević",
+        "igorskyflyer"
+    ],
+    "license": "MIT",
+    "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
+    "funding": "https://ko-fi.com/igorskyflyer",
+    "homepage": "https://github.com/igorskyflyer/npm-normalized-string",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/igorskyflyer/npm-normalized-string.git"
+    },
+    "bugs": {
+        "url": "https://github.com/igorskyflyer/npm-normalized-string/issues"
+    },
+    "dependencies": {
+        "@igorskyflyer/extendable-string": "^2.1.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.2",
+        "@igorskyflyer/biome-config": "^2.1.0",
+        "@types/node": "^22.18.0",
+        "typescript": "^5.9.2",
+        "vitest": "^3.2.4"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "packageManager": "pnpm@10.15.0"
 }
